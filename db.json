@@ -1,0 +1,879 @@
+{
+  "factories": [
+    {
+      "id": "FAC_001",
+      "name": "부산공장",
+      "location": "부산광역시 강서구",
+      "sensorCount": 12,
+      "status": "normal"
+    },
+    {
+      "id": "FAC_002",
+      "name": "서울공장",
+      "location": "서울특별시 구로구",
+      "sensorCount": 8,
+      "status": "warning"
+    },
+    {
+      "id": "FAC_003",
+      "name": "대구공장",
+      "location": "대구광역시 달서구",
+      "sensorCount": 10,
+      "status": "normal"
+    },
+    {
+      "id": "FAC_004",
+      "name": "인천공장",
+      "location": "인천광역시 연수구",
+      "sensorCount": 6,
+      "status": "critical"
+    }
+  ],
+  "sensors": [
+    {
+      "id": "TEMP_001",
+      "name": "온도센서-1호기",
+      "factory": "부산공장",
+      "type": "temperature",
+      "status": "normal",
+      "value": 23.5,
+      "unit": "°C",
+      "location": "생산라인 A-1",
+      "lastUpdated": "2024-07-04T10:30:00Z",
+      "threshold": {
+        "warning": 30,
+        "critical": 40
+      }
+    },
+    {
+      "id": "TEMP_002",
+      "name": "온도센서-2호기",
+      "factory": "부산공장",
+      "type": "temperature",
+      "status": "warning",
+      "value": 32.1,
+      "unit": "°C",
+      "location": "생산라인 A-2",
+      "lastUpdated": "2024-07-04T10:29:45Z",
+      "threshold": {
+        "warning": 30,
+        "critical": 40
+      }
+    },
+    {
+      "id": "TEMP_003",
+      "name": "온도센서-3호기",
+      "factory": "서울공장",
+      "type": "temperature",
+      "status": "normal",
+      "value": 25.8,
+      "unit": "°C",
+      "location": "생산라인 B-1",
+      "lastUpdated": "2024-07-04T10:28:30Z",
+      "threshold": {
+        "warning": 35,
+        "critical": 45
+      }
+    },
+    {
+      "id": "TEMP_004",
+      "name": "온도센서-4호기",
+      "factory": "대구공장",
+      "type": "temperature",
+      "status": "critical",
+      "value": 42.3,
+      "unit": "°C",
+      "location": "열처리실 C-1",
+      "lastUpdated": "2024-07-04T10:27:15Z",
+      "threshold": {
+        "warning": 35,
+        "critical": 40
+      }
+    },
+    {
+      "id": "TEMP_005",
+      "name": "온도센서-5호기",
+      "factory": "인천공장",
+      "type": "temperature",
+      "status": "normal",
+      "value": 28.9,
+      "unit": "°C",
+      "location": "생산라인 D-1",
+      "lastUpdated": "2024-07-04T10:26:50Z",
+      "threshold": {
+        "warning": 32,
+        "critical": 38
+      }
+    },
+    {
+      "id": "PRES_001",
+      "name": "압력센서-1호기",
+      "factory": "부산공장",
+      "type": "pressure",
+      "status": "normal",
+      "value": 65.4,
+      "unit": "PSI",
+      "location": "보일러실 A-1",
+      "lastUpdated": "2024-07-04T10:30:10Z",
+      "threshold": {
+        "warning": 80,
+        "critical": 100
+      }
+    },
+    {
+      "id": "PRES_002",
+      "name": "압력센서-2호기",
+      "factory": "서울공장",
+      "type": "pressure",
+      "status": "warning",
+      "value": 85.2,
+      "unit": "PSI",
+      "location": "보일러실 B-2",
+      "lastUpdated": "2024-07-04T10:29:45Z",
+      "threshold": {
+        "warning": 80,
+        "critical": 100
+      }
+    },
+    {
+      "id": "PRES_003",
+      "name": "압력센서-3호기",
+      "factory": "대구공장",
+      "type": "pressure",
+      "status": "normal",
+      "value": 72.8,
+      "unit": "PSI",
+      "location": "압축기실 C-1",
+      "lastUpdated": "2024-07-04T10:28:20Z",
+      "threshold": {
+        "warning": 85,
+        "critical": 110
+      }
+    },
+    {
+      "id": "PRES_004",
+      "name": "압력센서-4호기",
+      "factory": "인천공장",
+      "type": "pressure",
+      "status": "critical",
+      "value": 105.7,
+      "unit": "PSI",
+      "location": "보일러실 D-1",
+      "lastUpdated": "2024-07-04T10:27:35Z",
+      "threshold": {
+        "warning": 90,
+        "critical": 100
+      }
+    },
+    {
+      "id": "VIB_001",
+      "name": "진동센서-1호기",
+      "factory": "부산공장",
+      "type": "vibration",
+      "status": "normal",
+      "value": 2.1,
+      "unit": "mm/s",
+      "location": "터빈 A-1",
+      "lastUpdated": "2024-07-04T10:30:05Z",
+      "threshold": {
+        "warning": 5.0,
+        "critical": 8.0
+      }
+    },
+    {
+      "id": "VIB_002",
+      "name": "진동센서-2호기",
+      "factory": "서울공장",
+      "type": "vibration",
+      "status": "warning",
+      "value": 6.2,
+      "unit": "mm/s",
+      "location": "터빈 B-1",
+      "lastUpdated": "2024-07-04T10:29:20Z",
+      "threshold": {
+        "warning": 5.5,
+        "critical": 9.0
+      }
+    },
+    {
+      "id": "VIB_003",
+      "name": "진동센서-3호기",
+      "factory": "대구공장",
+      "type": "vibration",
+      "status": "normal",
+      "value": 3.8,
+      "unit": "mm/s",
+      "location": "컨베이어 C-2",
+      "lastUpdated": "2024-07-04T10:28:45Z",
+      "threshold": {
+        "warning": 6.0,
+        "critical": 10.0
+      }
+    },
+    {
+      "id": "VIB_004",
+      "name": "진동센서-4호기",
+      "factory": "인천공장",
+      "type": "vibration",
+      "status": "normal",
+      "value": 1.9,
+      "unit": "mm/s",
+      "location": "압축기 D-2",
+      "lastUpdated": "2024-07-04T10:27:55Z",
+      "threshold": {
+        "warning": 4.5,
+        "critical": 7.5
+      }
+    },
+    {
+      "id": "HUM_001",
+      "name": "습도센서-1호기",
+      "factory": "부산공장",
+      "type": "humidity",
+      "status": "normal",
+      "value": 45.2,
+      "unit": "%",
+      "location": "창고 A-3",
+      "lastUpdated": "2024-07-04T10:29:55Z",
+      "threshold": {
+        "warning": 70,
+        "critical": 85
+      }
+    },
+    {
+      "id": "HUM_002",
+      "name": "습도센서-2호기",
+      "factory": "서울공장",
+      "type": "humidity",
+      "status": "normal",
+      "value": 52.8,
+      "unit": "%",
+      "location": "창고 B-1",
+      "lastUpdated": "2024-07-04T10:28:40Z",
+      "threshold": {
+        "warning": 65,
+        "critical": 80
+      }
+    },
+    {
+      "id": "HUM_003",
+      "name": "습도센서-3호기",
+      "factory": "대구공장",
+      "type": "humidity",
+      "status": "warning",
+      "value": 73.5,
+      "unit": "%",
+      "location": "창고 C-1",
+      "lastUpdated": "2024-07-04T10:27:25Z",
+      "threshold": {
+        "warning": 70,
+        "critical": 85
+      }
+    },
+    {
+      "id": "HUM_004",
+      "name": "습도센서-4호기",
+      "factory": "인천공장",
+      "type": "humidity",
+      "status": "normal",
+      "value": 38.9,
+      "unit": "%",
+      "location": "창고 D-2",
+      "lastUpdated": "2024-07-04T10:26:30Z",
+      "threshold": {
+        "warning": 75,
+        "critical": 90
+      }
+    },
+    {
+      "id": "TEMP_006",
+      "name": "온도센서-6호기",
+      "factory": "부산공장",
+      "type": "temperature",
+      "status": "normal",
+      "value": 26.7,
+      "unit": "°C",
+      "location": "생산라인 A-3",
+      "lastUpdated": "2024-07-04T10:30:15Z",
+      "threshold": {
+        "warning": 30,
+        "critical": 40
+      }
+    },
+    {
+      "id": "TEMP_007",
+      "name": "온도센서-7호기",
+      "factory": "서울공장",
+      "type": "temperature",
+      "status": "critical",
+      "value": 41.8,
+      "unit": "°C",
+      "location": "용광로 B-3",
+      "lastUpdated": "2024-07-04T10:25:30Z",
+      "threshold": {
+        "warning": 35,
+        "critical": 40
+      }
+    },
+    {
+      "id": "PRES_005",
+      "name": "압력센서-5호기",
+      "factory": "부산공장",
+      "type": "pressure",
+      "status": "normal",
+      "value": 68.3,
+      "unit": "PSI",
+      "location": "압축기실 A-2",
+      "lastUpdated": "2024-07-04T10:29:00Z",
+      "threshold": {
+        "warning": 80,
+        "critical": 100
+      }
+    },
+    {
+      "id": "VIB_005",
+      "name": "진동센서-5호기",
+      "factory": "대구공장",
+      "type": "vibration",
+      "status": "critical",
+      "value": 9.8,
+      "unit": "mm/s",
+      "location": "터빈 C-3",
+      "lastUpdated": "2024-07-04T10:26:45Z",
+      "threshold": {
+        "warning": 6.0,
+        "critical": 9.0
+      }
+    },
+    {
+      "id": "HUM_005",
+      "name": "습도센서-5호기",
+      "factory": "부산공장",
+      "type": "humidity",
+      "status": "warning",
+      "value": 78.2,
+      "unit": "%",
+      "location": "창고 A-4",
+      "lastUpdated": "2024-07-04T10:28:15Z",
+      "threshold": {
+        "warning": 75,
+        "critical": 90
+      }
+    },
+    {
+      "id": "TEMP_008",
+      "name": "온도센서-8호기",
+      "factory": "대구공장",
+      "type": "temperature",
+      "status": "normal",
+      "value": 29.4,
+      "unit": "°C",
+      "location": "생산라인 C-3",
+      "lastUpdated": "2024-07-04T10:27:40Z",
+      "threshold": {
+        "warning": 35,
+        "critical": 40
+      }
+    },
+    {
+      "id": "PRES_006",
+      "name": "압력센서-6호기",
+      "factory": "서울공장",
+      "type": "pressure",
+      "status": "normal",
+      "value": 76.9,
+      "unit": "PSI",
+      "location": "압축기실 B-3",
+      "lastUpdated": "2024-07-04T10:26:20Z",
+      "threshold": {
+        "warning": 80,
+        "critical": 100
+      }
+    },
+    {
+      "id": "VIB_006",
+      "name": "진동센서-6호기",
+      "factory": "인천공장",
+      "type": "vibration",
+      "status": "warning",
+      "value": 5.1,
+      "unit": "mm/s",
+      "location": "터빈 D-3",
+      "lastUpdated": "2024-07-04T10:25:50Z",
+      "threshold": {
+        "warning": 4.5,
+        "critical": 7.5
+      }
+    },
+    {
+      "id": "TEMP_009",
+      "name": "온도센서-9호기",
+      "factory": "부산공장",
+      "type": "temperature",
+      "status": "normal",
+      "value": 24.8,
+      "unit": "°C",
+      "location": "품질관리실 A-5",
+      "lastUpdated": "2024-07-04T10:29:30Z",
+      "threshold": {
+        "warning": 28,
+        "critical": 35
+      }
+    },
+    {
+      "id": "HUM_006",
+      "name": "습도센서-6호기",
+      "factory": "서울공장",
+      "type": "humidity",
+      "status": "normal",
+      "value": 48.7,
+      "unit": "%",
+      "location": "품질관리실 B-4",
+      "lastUpdated": "2024-07-04T10:28:05Z",
+      "threshold": {
+        "warning": 65,
+        "critical": 80
+      }
+    },
+    {
+      "id": "TEMP_010",
+      "name": "온도센서-10호기",
+      "factory": "대구공장",
+      "type": "temperature",
+      "status": "normal",
+      "value": 27.2,
+      "unit": "°C",
+      "location": "포장라인 C-4",
+      "lastUpdated": "2024-07-04T10:26:10Z",
+      "threshold": {
+        "warning": 32,
+        "critical": 38
+      }
+    },
+    {
+      "id": "PRES_007",
+      "name": "압력센서-7호기",
+      "factory": "대구공장",
+      "type": "pressure",
+      "status": "warning",
+      "value": 88.4,
+      "unit": "PSI",
+      "location": "보일러실 C-2",
+      "lastUpdated": "2024-07-04T10:25:15Z",
+      "threshold": {
+        "warning": 85,
+        "critical": 110
+      }
+    },
+    {
+      "id": "VIB_007",
+      "name": "진동센서-7호기",
+      "factory": "부산공장",
+      "type": "vibration",
+      "status": "normal",
+      "value": 3.2,
+      "unit": "mm/s",
+      "location": "포장라인 A-6",
+      "lastUpdated": "2024-07-04T10:27:00Z",
+      "threshold": {
+        "warning": 5.0,
+        "critical": 8.0
+      }
+    },
+    {
+      "id": "HUM_007",
+      "name": "습도센서-7호기",
+      "factory": "대구공장",
+      "type": "humidity",
+      "status": "normal",
+      "value": 41.6,
+      "unit": "%",
+      "location": "포장라인 C-5",
+      "lastUpdated": "2024-07-04T10:24:45Z",
+      "threshold": {
+        "warning": 70,
+        "critical": 85
+      }
+    },
+    {
+      "id": "TEMP_011",
+      "name": "온도센서-11호기",
+      "factory": "부산공장",
+      "type": "temperature",
+      "status": "normal",
+      "value": 22.9,
+      "unit": "°C",
+      "location": "사무실 A-7",
+      "lastUpdated": "2024-07-04T10:28:25Z",
+      "threshold": {
+        "warning": 26,
+        "critical": 32
+      }
+    },
+    {
+      "id": "TEMP_012",
+      "name": "온도센서-12호기",
+      "factory": "부산공장",
+      "type": "temperature",
+      "status": "normal",
+      "value": 25.1,
+      "unit": "°C",
+      "location": "휴게실 A-8",
+      "lastUpdated": "2024-07-04T10:26:55Z",
+      "threshold": {
+        "warning": 28,
+        "critical": 35
+      }
+    },
+    {
+      "id": "PRES_008",
+      "name": "압력센서-8호기",
+      "factory": "서울공장",
+      "type": "pressure",
+      "status": "normal",
+      "value": 71.2,
+      "unit": "PSI",
+      "location": "냉각시설 B-5",
+      "lastUpdated": "2024-07-04T10:24:30Z",
+      "threshold": {
+        "warning": 80,
+        "critical": 100
+      }
+    }
+  ],
+  "sensorHistory": {
+    "TEMP_001": [
+      {
+        "timestamp": "2024-07-04T04:00:00Z",
+        "value": 22.1,
+        "status": "normal"
+      },
+      {
+        "timestamp": "2024-07-04T05:00:00Z",
+        "value": 22.8,
+        "status": "normal"
+      },
+      {
+        "timestamp": "2024-07-04T06:00:00Z",
+        "value": 23.2,
+        "status": "normal"
+      },
+      {
+        "timestamp": "2024-07-04T07:00:00Z",
+        "value": 23.8,
+        "status": "normal"
+      },
+      {
+        "timestamp": "2024-07-04T08:00:00Z",
+        "value": 24.1,
+        "status": "normal"
+      },
+      {
+        "timestamp": "2024-07-04T09:00:00Z",
+        "value": 23.9,
+        "status": "normal"
+      },
+      {
+        "timestamp": "2024-07-04T10:00:00Z",
+        "value": 23.5,
+        "status": "normal"
+      }
+    ],
+    "TEMP_002": [
+      {
+        "timestamp": "2024-07-04T04:00:00Z",
+        "value": 28.5,
+        "status": "normal"
+      },
+      {
+        "timestamp": "2024-07-04T05:00:00Z",
+        "value": 29.2,
+        "status": "normal"
+      },
+      {
+        "timestamp": "2024-07-04T06:00:00Z",
+        "value": 30.1,
+        "status": "warning"
+      },
+      {
+        "timestamp": "2024-07-04T07:00:00Z",
+        "value": 31.2,
+        "status": "warning"
+      },
+      {
+        "timestamp": "2024-07-04T08:00:00Z",
+        "value": 32.5,
+        "status": "warning"
+      },
+      {
+        "timestamp": "2024-07-04T09:00:00Z",
+        "value": 32.8,
+        "status": "warning"
+      },
+      {
+        "timestamp": "2024-07-04T10:00:00Z",
+        "value": 32.1,
+        "status": "warning"
+      }
+    ],
+    "TEMP_004": [
+      {
+        "timestamp": "2024-07-04T04:00:00Z",
+        "value": 36.2,
+        "status": "warning"
+      },
+      {
+        "timestamp": "2024-07-04T05:00:00Z",
+        "value": 37.8,
+        "status": "warning"
+      },
+      {
+        "timestamp": "2024-07-04T06:00:00Z",
+        "value": 39.1,
+        "status": "warning"
+      },
+      {
+        "timestamp": "2024-07-04T07:00:00Z",
+        "value": 40.5,
+        "status": "critical"
+      },
+      {
+        "timestamp": "2024-07-04T08:00:00Z",
+        "value": 41.8,
+        "status": "critical"
+      },
+      {
+        "timestamp": "2024-07-04T09:00:00Z",
+        "value": 42.9,
+        "status": "critical"
+      },
+      {
+        "timestamp": "2024-07-04T10:00:00Z",
+        "value": 42.3,
+        "status": "critical"
+      }
+    ],
+    "PRES_002": [
+      {
+        "timestamp": "2024-07-04T04:00:00Z",
+        "value": 75.2,
+        "status": "normal"
+      },
+      {
+        "timestamp": "2024-07-04T05:00:00Z",
+        "value": 78.1,
+        "status": "normal"
+      },
+      {
+        "timestamp": "2024-07-04T06:00:00Z",
+        "value": 80.5,
+        "status": "warning"
+      },
+      {
+        "timestamp": "2024-07-04T07:00:00Z",
+        "value": 82.8,
+        "status": "warning"
+      },
+      {
+        "timestamp": "2024-07-04T08:00:00Z",
+        "value": 84.2,
+        "status": "warning"
+      },
+      {
+        "timestamp": "2024-07-04T09:00:00Z",
+        "value": 86.1,
+        "status": "warning"
+      },
+      {
+        "timestamp": "2024-07-04T10:00:00Z",
+        "value": 85.2,
+        "status": "warning"
+      }
+    ],
+    "PRES_004": [
+      {
+        "timestamp": "2024-07-04T04:00:00Z",
+        "value": 92.1,
+        "status": "warning"
+      },
+      {
+        "timestamp": "2024-07-04T05:00:00Z",
+        "value": 96.8,
+        "status": "warning"
+      },
+      {
+        "timestamp": "2024-07-04T06:00:00Z",
+        "value": 99.2,
+        "status": "warning"
+      },
+      {
+        "timestamp": "2024-07-04T07:00:00Z",
+        "value": 102.5,
+        "status": "critical"
+      },
+      {
+        "timestamp": "2024-07-04T08:00:00Z",
+        "value": 104.8,
+        "status": "critical"
+      },
+      {
+        "timestamp": "2024-07-04T09:00:00Z",
+        "value": 107.2,
+        "status": "critical"
+      },
+      {
+        "timestamp": "2024-07-04T10:00:00Z",
+        "value": 105.7,
+        "status": "critical"
+      }
+    ],
+    "VIB_002": [
+      {
+        "timestamp": "2024-07-04T04:00:00Z",
+        "value": 4.2,
+        "status": "normal"
+      },
+      {
+        "timestamp": "2024-07-04T05:00:00Z",
+        "value": 4.8,
+        "status": "normal"
+      },
+      {
+        "timestamp": "2024-07-04T06:00:00Z",
+        "value": 5.2,
+        "status": "normal"
+      },
+      {
+        "timestamp": "2024-07-04T07:00:00Z",
+        "value": 5.8,
+        "status": "warning"
+      },
+      {
+        "timestamp": "2024-07-04T08:00:00Z",
+        "value": 6.1,
+        "status": "warning"
+      },
+      {
+        "timestamp": "2024-07-04T09:00:00Z",
+        "value": 6.5,
+        "status": "warning"
+      },
+      {
+        "timestamp": "2024-07-04T10:00:00Z",
+        "value": 6.2,
+        "status": "warning"
+      }
+    ],
+    "VIB_005": [
+      {
+        "timestamp": "2024-07-04T04:00:00Z",
+        "value": 7.1,
+        "status": "warning"
+      },
+      {
+        "timestamp": "2024-07-04T05:00:00Z",
+        "value": 7.8,
+        "status": "warning"
+      },
+      {
+        "timestamp": "2024-07-04T06:00:00Z",
+        "value": 8.2,
+        "status": "warning"
+      },
+      {
+        "timestamp": "2024-07-04T07:00:00Z",
+        "value": 8.9,
+        "status": "warning"
+      },
+      {
+        "timestamp": "2024-07-04T08:00:00Z",
+        "value": 9.2,
+        "status": "critical"
+      },
+      {
+        "timestamp": "2024-07-04T09:00:00Z",
+        "value": 9.6,
+        "status": "critical"
+      },
+      {
+        "timestamp": "2024-07-04T10:00:00Z",
+        "value": 9.8,
+        "status": "critical"
+      }
+    ],
+    "HUM_003": [
+      {
+        "timestamp": "2024-07-04T04:00:00Z",
+        "value": 65.2,
+        "status": "normal"
+      },
+      {
+        "timestamp": "2024-07-04T05:00:00Z",
+        "value": 67.8,
+        "status": "normal"
+      },
+      {
+        "timestamp": "2024-07-04T06:00:00Z",
+        "value": 69.5,
+        "status": "normal"
+      },
+      {
+        "timestamp": "2024-07-04T07:00:00Z",
+        "value": 71.2,
+        "status": "warning"
+      },
+      {
+        "timestamp": "2024-07-04T08:00:00Z",
+        "value": 72.8,
+        "status": "warning"
+      },
+      {
+        "timestamp": "2024-07-04T09:00:00Z",
+        "value": 74.1,
+        "status": "warning"
+      },
+      {
+        "timestamp": "2024-07-04T10:00:00Z",
+        "value": 73.5,
+        "status": "warning"
+      }
+    ],
+    "HUM_005": [
+      {
+        "timestamp": "2024-07-04T04:00:00Z",
+        "value": 70.1,
+        "status": "normal"
+      },
+      {
+        "timestamp": "2024-07-04T05:00:00Z",
+        "value": 72.8,
+        "status": "normal"
+      },
+      {
+        "timestamp": "2024-07-04T06:00:00Z",
+        "value": 74.5,
+        "status": "normal"
+      },
+      {
+        "timestamp": "2024-07-04T07:00:00Z",
+        "value": 75.8,
+        "status": "warning"
+      },
+      {
+        "timestamp": "2024-07-04T08:00:00Z",
+        "value": 77.2,
+        "status": "warning"
+      },
+      {
+        "timestamp": "2024-07-04T09:00:00Z",
+        "value": 78.9,
+        "status": "warning"
+      },
+      {
+        "timestamp": "2024-07-04T10:00:00Z",
+        "value": 78.2,
+        "status": "warning"
+      }
+    ]
+  }
+}
