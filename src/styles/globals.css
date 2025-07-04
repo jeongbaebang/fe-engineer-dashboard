@@ -1,8 +1,14 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
-  --background: #ffffff;
   --foreground: #171717;
+  --background: #f9fafb;
+  /* 상태별 색상 */
+  --color-normal: #10b981; /* 정상 - 초록 */
+  --color-warning: #f59e0b; /* 경고 - 주황 */
+  --color-critical: #ef4444; /* 위험 - 빨강 */
+  --color-primary: #3b82f6; /* 메인 - 파랑 */
+  --color-background: #f9fafb; /* 배경 - 회색 */
 }
 
 @theme inline {
